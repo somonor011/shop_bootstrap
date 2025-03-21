@@ -8,26 +8,44 @@
     <title>Document</title>
 </head>
 <body>
+    <!-- card sidebar start -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Card Items</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <p class=" text-center opacity-25">Your card is empty.</p>
+      </div>
+    </div>
+    <!-- card sidebar start -->
+
     <!-- navbar start -->
     <nav class="navbar navbar-expand-lg bg-dark">
         <div class="container-fluid px-5 py-2">
+
           <a class="navbar-brand" href="#">
             <img src="images/logo.png" width="50px" alt="">
           </a>
+
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class=""><img src="images/ham-icon.png" width="30px" alt=""></span>
           </button>
+
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
               </li>
+
               <li class="nav-item">
                 <a class="nav-link text-light" href="#">Phone</a>
               </li>
+
               <li class="nav-item">
                 <a class="nav-link text-light" href="#">Computer</a>
               </li>
+
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Watch
@@ -37,16 +55,60 @@
                   <li><a class="dropdown-item " href="#">Women</a></li>
                 </ul>
               </li>
+
             </ul>
+
             <form class="d-flex" role="search">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
               <button class="btn btn-secondary" type="submit"><img src="images/search-icon.png" width="30px" alt=""></button>
             </form>
-            <img src="images/shop-logo.png" class="mx-4 shop" width="35px" alt="">
+
+            <img data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" src="images/shop-logo.png" class="mx-4 shop" width="35px" alt="">
           </div>
         </div>
     </nav>
     <!-- navbar end -->
+
+    <!-- content start -->
+    <div class="container mt-4">
+
+      <!-- slide start -->
+      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+
+          <div class="carousel-item active" data-bs-interval="3000">
+            <img style="height: 500px;" src="https://img.freepik.com/free-photo/sport-composition-with-modern-elements_23-2147913643.jpg?t=st=1742568029~exp=1742571629~hmac=36aea5bb5e9deee1a0ae77282dffbbd9127e205a176bee228fa87fd9605f2318&w=1380" class="d-block w-100" alt="...">
+            
+          </div>
+
+          <div class="carousel-item" data-bs-interval="3000">
+            <img style="height: 500px;"  src="https://img.freepik.com/free-photo/blurred-background-laptops-tvs-displayed-electronics-store_91128-3422.jpg?t=st=1742568073~exp=1742571673~hmac=01622cf639564621132b9c5e6aa63049ddab243e7cdaaf563fc107cfd5859556&w=1380" class="d-block w-100" alt="...">
+            
+          </div>
+
+          <div class="carousel-item" data-bs-interval="3000">
+            <img style="height: 500px;" src="https://img.freepik.com/free-photo/still-life-casual-man-modern-male-accessories-black_155003-1726.jpg?t=st=1742568175~exp=1742571775~hmac=02c6e9b592f49f085c05a0050481af2f44e59e4d52c76f3e5c5264900c88d434&w=1380" class="d-block w-100" alt="...">
+            
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- slide start -->
+
+    </div>
+    <!-- content end -->
 </body>
 <script src="bootstrap/bootstrap.bundle.min.js"></script>
 </html>

@@ -7,3 +7,7 @@
 .shop{
     cursor: pointer;
 }
+
+#offcanvasExample{
+    width: 35%;
+}
